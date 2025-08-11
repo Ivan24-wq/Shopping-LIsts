@@ -1,0 +1,4 @@
+D:\My program\MauiApp1\MauiApp1\output\com.companyname.mauiapp1-Signed.aab
+D:\My program\MauiApp1\MauiApp1\output\com.companyname.mauiapp1.aab
+D:\My program\MauiApp1\MauiApp1\output\com.companyname.mauiapp1-Signed.apk
+D:\My program\MauiApp1\MauiApp1\output\_Microsoft.Android.Resource.Designer.dll
