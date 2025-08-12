@@ -41,6 +41,6 @@ workflows:
             -p:EnableCodeSigning=false \
             -p:ArchiveOnBuild=true \
             -p:RuntimeIdentifier=ios-arm64
+artifacts:
+  - bin/Release/net9.0-ios/ios-arm64/publish/*.ipa
 
-    artifacts:
-      - bin/Release/net9.0-ios/ios-arm64/*.ipa
