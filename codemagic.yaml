@@ -6,6 +6,8 @@ workflows:
     environment:
       vars:
         DOTNET_VERSION: 9.0.100
+        DOTNET_CLI_HOME: /tmp/dotnet
+        DOTNET_SKIP_FIRST_TIME_EXPERIENCE: 1
       xcode: 15.4
     scripts:
       - name: Install .NET SDK
@@ -13,10 +15,11 @@ workflows:
           brew install --cask dotnet-sdk
           sudo ln -s /usr/local/share/dotnet/dotnet /usr/local/bin/dotnet
           dotnet --version
-      - name: Install MAUI workloads
+      - name: Install MAUI workloads (no sudo)
         script: |
-          dotnet workload install maui
-          dotnet workload install ios maccatalyst
+          mkdir -p $DOTNET_CLI_HOME
+          dotnet workload install maui --skip-manifest-update
+          dotnet workload install ios maccatalyst --skip-manifest-update
       - name: Restore NuGet packages
         script: |
           dotnet restore
