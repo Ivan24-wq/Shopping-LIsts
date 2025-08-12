@@ -26228,11 +26228,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ListApp\\Shopping-LIsts\\MauiApp1.csproj",
+      "projectUniqueName": "F:\\ListApp\\List\\Shopping-LIsts\\MauiApp1.csproj",
       "projectName": "MauiApp1",
-      "projectPath": "F:\\ListApp\\Shopping-LIsts\\MauiApp1.csproj",
+      "projectPath": "F:\\ListApp\\List\\Shopping-LIsts\\MauiApp1.csproj",
       "packagesPath": "C:\\Users\\Darkghost\\.nuget\\packages\\",
-      "outputPath": "F:\\ListApp\\Shopping-LIsts\\obj\\",
+      "outputPath": "F:\\ListApp\\List\\Shopping-LIsts\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [

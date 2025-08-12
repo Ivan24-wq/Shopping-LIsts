@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VWa6kdzhqOQ=",
+  "dgSpecHash": "ZaK/8OVO0sk=",
   "success": true,
-  "projectFilePath": "F:\\ListApp\\Shopping-LIsts\\MauiApp1.csproj",
+  "projectFilePath": "F:\\ListApp\\List\\Shopping-LIsts\\MauiApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Darkghost\\.nuget\\packages\\googlegson\\2.11.0.5\\googlegson.2.11.0.5.nupkg.sha512",
     "C:\\Users\\Darkghost\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
