@@ -42,6 +42,7 @@ public partial class SecondPage : ContentPage
 		ViewModel.IsReadOnly = !ViewModel.IsReadOnly;
 		ViewModel.EditButtonText = ViewModel.IsReadOnly ? "Редактировать" : "Сохранить";
 
+
     }
 
 	private void OnCLickedDelete(object sender, EventArgs e)
@@ -49,5 +50,20 @@ public partial class SecondPage : ContentPage
 		ViewModel.Items.Clear();
 
 		SaveShoppingList();
+	}
+
+	//Сохраниение редактированного результата
+	private void OnItemTextChanged(object sender, TextChangedEventArgs e)
+	{
+		if(sender is Entry entry && ViewModel.Items != null)
+		{
+			//Редактирование корзины
+			var oldView = e.OldTextValue;
+			var index = ViewModel.Items.IndexOf(oldView);
+			if(index >= 0)
+			{
+				ViewModel.Items[index] = e.NewTextValue;
+			}
+		}
 	}
 }

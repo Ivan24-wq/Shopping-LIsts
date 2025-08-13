@@ -29,8 +29,9 @@
             <CollectionView ItemsSource="{Binding Items}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Entry Text="{Binding}"
+                        <Entry Text="{Binding ., Mode=TwoWay}"
                            FontSize="18"
+                               TextChanged="OnItemTextChanged"
                            IsReadOnly="{Binding Source={x:Reference EditToggleButton}, Path=BindingContext.IsReadOnly}"/>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
@@ -51,11 +52,11 @@
 
                 <Button BackgroundColor="DarkRed"
                     Text="Удалить список"
-                    FontSize="24"
+                    FontSize="20"
                     FontAttributes="Bold"
                     TextColor="White"
-                    WidthRequest="200"
-                    Padding="0, 10"
+                    WidthRequest="170"
+                    Padding="0, 5"
                     CornerRadius="20"
                     HorizontalOptions="End"
                     Clicked="OnCLickedDelete"/>
